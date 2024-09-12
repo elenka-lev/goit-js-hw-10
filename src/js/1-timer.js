@@ -10,8 +10,9 @@ const dataTime = document.querySelector("#datetime-picker"),
     dataSeconds = document.querySelector('[data-seconds]'),
     btnStart = document.querySelector('[data-start]');
 
-let userSelectedDate = null;
-let timerInterval = null;
+let userSelectedDate;
+let timerInterval;
+btnStart.desabled = true;
 
 const options = {
   enableTime: true,
