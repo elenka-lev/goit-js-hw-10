@@ -11,7 +11,7 @@
 .container {
   max-width: 500px;
   margin: 0 auto;
-  background-color: rgb(192, 146, 235);
+  background-color: rgb(242, 241, 243);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,4 +43,142 @@
   box-shadow: rgba(0, 0, 0, .5) 3px 10px 10px -10px;
   }
 
+.home {
+  display: inline-flex;
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  justify-content: center;
+  background-color: #fdd5eb;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, .5) 3px 10px 10px -10px;
+  border-radius: 5%;
+}
+#datetime-picker {
+  width: 280px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 20px;
+  padding-left: 16px;
+  border: 1px solid #808080;
+}
+#datetime-picker:hover{
+  border: 1px solid #000000;
+}
+#datetime-picker:active{
+  border: 1px solid #4E75FF;
+  color: #000000;
+}
+#datetime-picker:disabled{
+  background: #fafafa;
+}
+button[data-start] {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  border: none;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background: #4e75ff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  margin-bottom: 32px;
+}
+button[data-start]:hover {
+  background: #6c8cff;
+}
+button[data-start]:disabled {
+  background: #cfcfcf;
+}
+.timer {
+  display: flex;
+  justify-content: space-between;
+  width: 346px;
+  height: 72px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.value {
+  font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+.label{
+  font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2e2f42;
+    text-transform: uppercase;
+}
+.form {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
 
+form > label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type='number'] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+fieldset label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  display: block;
+  padding: 10px 20px;
+  margin: 20px auto;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  transform: translateY(1px);
+}

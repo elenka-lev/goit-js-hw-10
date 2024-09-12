@@ -25,11 +25,15 @@ const options = {
       if (userSelectedDate < new Date()) {
           iziToast.show({
              title: 'Error',
-             message: 'Please choose a date in the future'
+              message: 'Please choose a date in the future',
+             backgroundColor: '#f44336',
+                progressBarColor: '#d32f2f',
+                position: 'topRight',
+                messageColor: 'white'
           });
           btnStart.disabled = true;
       } else {
-          
+          dataTime.disabled = true;
           btnStart.disabled = false;
       }
   },
